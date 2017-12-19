@@ -3,13 +3,13 @@
   translation: "О проекте"
 
 - id: title_lts
-  translation: "Скачать LTS"
+  translation: "Загрузить LTS"
 
 - id: title_apps
-  translation: "Скачать"
+  translation: "Загрузить"
 
 - id: title_faq
-  translation: "FAQ" # TODO: i18n: is this translation correct?
+  translation: "FAQ"
 
 - id: title_getsiacoin
   translation: "Получить саякойны"

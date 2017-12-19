@@ -2,8 +2,11 @@
 - id: title_about
   translation: "О проекте"
 
+- id: title_lts
+  translation: "Скачать LTS"
+
 - id: title_apps
-  translation: "Download" # TODO: i18n: update translation
+  translation: "Скачать"
 
 - id: title_faq
   translation: "FAQ" # TODO: i18n: is this translation correct?
@@ -17,6 +20,8 @@
 - id: title_roadmap
   translation: "Дорожная карта"
 
+- id: title_support
+  translation: "База знаний"
 
 # Partials
 ### header ###
@@ -71,10 +76,10 @@
   translation: "Адрес"
 
 - id: footer_like
-  translation: "Like us" # TODO: i18n: translate this.
+  translation: "Оцените нас"
 
 - id: footer_follow
-  translation: "Follow us" # TODO: i18n: translate this.
+  translation: "Читайте нас"
 
 
 # URL: /about/index.html
@@ -134,22 +139,43 @@
   translation: "Июнь 2016: Версия 1 Sia"
 
 - id: milestones_exchanges
-  translation: "July 2016: Sia on Poloniex, YUNBI, Bitsquare, and ShapeShift" # TODO: i18n: translate this.
+  translation: "Июль 2016: Sia на Poloniex, YUNBI, Bitsquare, и ShapeShift"
 
 - id: milestones_funding2016
-  translation: "August 2016: Nebulous Raises $750k for Sia" # TODO: i18n: translate this.
+  translation: "Август 2016: Nebulous собрал $750k для Sia"
 
+- id: milestones_speedboost
+  translation: "Январь 2017: Ускорение скорости скачивания и загрузки"
+
+- id: milestones_instantunlock
+  translation: "Мгновенная разблокировка кошелька"
+
+- id: milestones_hostautopricing
+  translation: "Автоматический выбор цены для хоста"
+
+- id: milestones_seedrecovery
+  translation: "Восстановление файлов используя Seed"
+
+- id: milestones_filesharing
+  translation: "Общий доступ к файлам"
+
+# URL: /lts.html
+- id: lts_explanation1
+  translation: "Sia имеет специальную линейку релизов, называемую долгосрочными версиями поддержки. Выпуски LTS в первую очередь не включают новые функции до тех пор, пока эти функции не будут работать в течение длительного времени, без появления новых или неожиданных ошибок. Это означает, что важные функции (например, мгновенная разблокировка кошелька) не добавляются в выпуск LTS вплоть до нескольких месяцев после их выпуска для широкой публики."
+
+- id: lts_explanation2
+  translation: "Все выпуски Sia тщательно протестированы. Однако реальность такова, что ошибки могут возникать в процессе использования. Наша цель состоит в том, чтобы ни один из наших выпусков не имел ошибок, но пока мы не сможем последовательно достичь этой цели, мы предоставляем медленно обновляющиеся версии LTS для пользователей и разработчиков, которым требуется стабильность. Если стабильность не является важной для Вас, мы рекомендуем использовать наши <a href=\"../apps\">актуальные версии</a>, которые, как правило, быстрее, удобнее и эффективнее."
 
 # URL: /apps/index.html
 ### header ###
-- id: apps_uiheader
-  translation: "Sia-UI"
+- id: apps_ltsheader
+  translation: "Испольуете Sia профессионально? Проверьте наши "
 
-- id: apps_uiheaderlts
-  translation: "Sia-UI (LTS)"
+- id: apps_ltslinktext
+  translation: "LTS релизы."
 
 - id: apps_uisubheader
-  translation: "For users" # TODO: translate
+  translation: "Для пользователей"
 
 - id: apps_daemonheader
   translation: "Sia Daemon"
@@ -158,20 +184,20 @@
   translation: "Sia Daemon (LTS)"
 
 - id: apps_daemonsubheader
-  translation: "For developers" # TODO: translate
+  translation: "Для разработчиков"
 
 - id: apps_minerheader
-  translation: "Miners" # TODO: translate
+  translation: "Майнеры"
 
 ### miner ###
 - id: apps_download
-  translation: "Скачать"
+  translation: "Загрузить"
 
 - id: apps_miner
-  translation: "майнер"
+  translation: "Майнер"
 
 - id: apps_miner1
-  translation: "The official GPU miner" # TODO: translate
+  translation: "Официальный GPU майнер"
 
 - id: apps_altminer
   translation: "Альтернативный майнер"
@@ -180,7 +206,7 @@
   translation: "GPU майнер для Sia на Go"
 
 - id: apps_sourcecode
-  translation: "Source code on GitHub"
+  translation: "Исходный код на GitHub"
 
 ### built on sia ###
 - id: apps_builtheader
@@ -192,17 +218,45 @@
 - id: apps_explorerp
   translation: "Обозреватель блоков Sia"
 
+- id: apps_luxor
+  translation: "Создание приложений и сервисов, ориентированных на Sia"
+
 - id: apps_minebox
-  translation: "Next generation NAS powered by Sia" # TODO: translate
+  translation: "Cетевая система хранения данных следующего поколения использующая Sia"
 
-- id: apps_siacluster
-  translation: "Data farm monitoring and management tool for Sia" # TODO: translate
+- id: apps_pixeldrain
+  translation: "Сайт для совместного использования файлов Sia"
 
-- id: apps_gnomeshell
-  translation: "Sia Cloud Storage Extension for GNOME Shell" # TODO: translate
+- id: apps_siadrive
+  translation: "Используйте Sia как диск на рабочем столе"
 
-- id: apps_siapulse
-  translation: "Analytics tool for Sia" # TODO: translate
+- id: apps_siaberry
+  translation: "OS для использования Sia на Raspberry Pi"
+
+- id: apps_siahub
+  translation: "Сетевая статистика и другие инструменты Sia"
+
+- id: apps_siastats
+  translation: "Графики и показатели для сети Sia"
+
+- id: apps_obelisk
+  translation: "Первый ASIC майнер для Siacoin"
+  
+  ### integrations ###
+- id: integrations_header
+  translation: "Интеграции (Бета)"
+
+- id: integrations_learn
+  translation: "Узнать больше"
+
+- id: integrations_duplicati
+  translation: "Автоматическое программное обеспечение резервного копирования с дружественным интерфейсом"
+
+- id: integrations_minio
+  translation: "S3-совместимый сервер хранения распределенных объектовr"
+
+- id: integrations_nextcloud
+  translation: "Самостоятельная альтернатива Dropbox"
 
 
 # URL: /faq.html
@@ -451,6 +505,12 @@
 - id: getsiacoin_yunbi
   translation: "YUNBI — ориентированная на будущее биржа для торговли активами блокчейнов. Основанна в Пекине в 2013 году и построенна на коде, выпущенным Peatio Open Source Project. YUNBI придерживается принципов честности и прозрачности, и, как проект на открытом коде, предлагает пользователям простую и безопасную платформу для торговли."
 
+- id: getsiacoin_shapeshift
+  translation: "Shapeshift - это инновационный и быстрый обменник криптовалютами, который не имеет длительного процесса регистрации. Просто укажите количество валюты, которая у вас есть, выберите вывод в Siacoin, поместите свой адрес Siacoin в поле и нажмите «Продолжить»."
+
+- id: getsiacoin_bittrex
+  translation: "Основанная и полностью регулируемая в США, Bittrex - это место для трейдеров, которым требуется молниеносное исполнения торгов, стабильные кошельки и лучшие в отрасли методы безопасности."
+
 - id: getsiacoin_btn
   translation: "Получить саякойны"
 
@@ -468,54 +528,54 @@
   translation: "Хранение"
 
 - id: getstarted_storeiconp
-  translation: "Я хочу использовать Sia для хранения моих данных" # TODO: update translation
+  translation: "Я хочу использовать Sia для хранения моих данных"
 
 - id: getstarted_storeh
-  translation: "Хранение саякойнов" # TODO: i18n: update translation
+  translation: "Хранение саякойнов"
 
 - id: getstarted_storestep1
-  translation: "Скачайте <a href=\"../apps/#ui\">Sia-UI</a>"
+  translation: "Загрузите <a href=\"../apps/#ui\">Sia-UI</a>"
 
 - id: getstarted_storestep2
   translation: "Получайте <a href=\"../get-siacoin\">Siacoin</a>"
 
 - id: getstarted_storestep3
-  translation: "Храните ваши файлы" # TODO: update translation
+  translation: "Храните ваши файлы"
 
 ### farm ###
 - id: getstarted_farmiconh
-  translation: "Хостинг" # TODO: update translation
+  translation: "Хостинг"
 
 - id: getstarted_farmiconp
-  translation: "Я хочу сдавать в аренду мое пространство за саякойны" # TODO: update translation
+  translation: "Я хочу сдавать в аренду мое пространство за саякойны"
 
 - id: getstarted_farmh
-  translation: "Для хостинга за саякойны" # TODO: update translation
+  translation: "Для хостинга за саякойны"
 
 - id: getstarted_farmstep1
-  translation: "Скачайте <a href=\"../apps/#ui\">Sia-UI</a>"
+  translation: "Загрузите <a href=\"../apps/#ui\">Sia-UI</a>"
 
 - id: getstarted_farmstep2
-  translation: "Предложить оферту для хранения данных" # TODO: update translation
+  translation: "Выберите цену за хранение"
 
 - id: getstarted_farmstep3
-  translation: "Получить Сиакойнс файловыми контрактами" # TODO: update translation
+  translation: "Зарабатывайте Siacoin от других пользователей Sia"
 
 - id: getstarted_farmstep4
-  translation: "Follow the <a href=\"https://blog.sia.tech/how-to-run-a-host-on-sia-2159ebc4725\">hosting guide</a>" # TODO: translate this
+  translation: "Читайте <a href=\"https://blog.sia.tech/how-to-run-a-host-on-sia-2159ebc4725\">руководство по хостингу</a>"
 
 ### mine ###
 - id: getstarted_mineiconh
   translation: "Майнинг"
 
 - id: getstarted_mineiconp
-  translation: "Я хочу заниматься майнингом саякойнов и обеспечивать безопасность блокчейна" # TODO: update translation
+  translation: "Я хочу заниматься майнингом саякойнов и обеспечивать безопасность блокчейна"
 
 - id: getstarted_mineh
-  translation: "Майнинг саякойнов" # TODO: update translation
+  translation: "Майнинг саякойнов"
 
 - id: getstarted_minestep1
-  translation: "Скачайте <a href=\"../apps/#miner\">Sia майнер</a>"
+  translation: "Загрузите <a href=\"../apps/#miner\">Sia майнер</a>"
 
 - id: getstarted_minestep2
   translation: "Способствуйте безопасности сети"
@@ -525,25 +585,25 @@
 
 ### develop ###
 - id: getstarted_developiconh
-  translation: "Разработка" # TODO: update translation
+  translation: "Разработка"
 
 - id: getstarted_developiconp
-  translation: "Я хочу использовать Sia для моих приложений" # TODO: update translation
+  translation: "Я хочу использовать Sia для моих приложений"
 
 - id: getstarted_developh
-  translation: "Разработать саякойны" # TODO: update translation
+  translation: "Использование API Sia"
 
 - id: getstarted_developstep1
-  translation: "Присоединяйтесь <a href=\"../apps/#daemon\">Sia Daemon</a>" # TODO: update translation
+  translation: "Загрузите <a href=\"../apps/#daemon\">Sia Daemon</a>"
 
 - id: getstarted_developstep2
   translation: "Получайте <a href=\"../get-siacoin\">Siacoin</a>"
 
 - id: getstarted_developstep3
-  translation: "Ознакомьтесь с нашей <a href=\"https://github.com/NebulousLabs/Sia/tree/master/doc\">документацией</a>" # TODO: update translation
+  translation: "Ознакомьтесь с нашей <a href=\"https://github.com/NebulousLabs/Sia/tree/master/doc\">документацией</a>"
 
 - id: getstarted_developstep4
-  translation: "Используйте Sia для ваших приложений" # TODO: update translation
+  translation: "Используйте Sia для ваших приложений"
 
 - id: getstarted_developstep5
-  translation: "Use Sia as your storage backend" # TODO: update translation
+  translation: "Используйте Sia в качестве хранилища"
